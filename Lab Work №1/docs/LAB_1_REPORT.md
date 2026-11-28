@@ -114,36 +114,36 @@ systemBoundary Museum["Информационная система музея"]
     UC17("UC-17 [FR-17] Войти в систему")
 end
 
-Visitor --> UC01
-Visitor --> UC03
-Visitor --> UC04
-Visitor --> UC05
-Visitor --> UC07
-Visitor --> UC08
-Visitor --> UC11
-Visitor --> UC16
+Visitor --- UC01
+Visitor --- UC03
+Visitor --- UC04
+Visitor --- UC05
+Visitor --- UC07
+Visitor --- UC08
+Visitor --- UC11
+Visitor --- UC16
 
-Guide --> UC07
-Guide --> UC14
-Guide --> UC16
-Guide --> UC17
+Guide --- UC07
+Guide --- UC14
+Guide --- UC16
+Guide --- UC17
 
-Admin --> UC06
-Admin --> UC12
-Admin --> UC13
-Admin --> UC17
+Admin --- UC06
+Admin --- UC12
+Admin --- UC13
+Admin --- UC17
 
-Cashier --> UC04
-Cashier --> UC15
-Cashier --> UC17
+Cashier --- UC04
+Cashier --- UC15
+Cashier --- UC17
 
-Payment --> UC02
+Payment --- UC02
 
-Equipment --> UC08
-Equipment --> UC09
+Equipment --- UC08
+Equipment --- UC09
 
-Management --> UC12
-Management --> UC17
+Management --- UC12
+Management --- UC17
 
 UC01 ..> : include UC02
 UC03 ..> : include UC02
